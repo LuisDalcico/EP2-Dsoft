@@ -29,13 +29,13 @@ def faz_jogada(tabuleiro, linha, coluna):
 
 def posiciona_frota(frota):
 
-grid = [[0 for in range(10)] for in range(10)]
+    grid = [[0 for i in range(10)] for i in range(10)]
 
-for nome_navio in frota:
-    for navio in frota[nome_navio]:
-        for posicaoo in navio:
+    for nome_navio in frota:
+        for navio in frota[nome_navio]:
+            for posicao in navio:
                 linha, coluna = posicao
                 grid[linha][coluna] = 1 
-return grid 
+    return grid 
  
 
