@@ -28,3 +28,25 @@ print(resultado)
   ]
 }
 
+frota = {
+  "navio-tanque":[
+    [[6,1],[6,2],[6,3]]
+  ]
+}
+nome_navio = 'navio-tanque'
+linha = 4
+coluna = 7
+orientacao = 'vertical'
+tamanho = 3
+
+resultado = preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho)
+print(resultado)
+{
+  "navio-tanque":[
+    [[6,1],[6,2],[6,3]],
+    [[4,7],[5,7],[6,7]]
+  ]
+}
+
+
+
