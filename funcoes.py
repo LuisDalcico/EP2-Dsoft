@@ -54,3 +54,30 @@ def afundados(frota, tabuleiro):
     return afund
  
 
+ def define_posicoes(linha, coluna, orientacao, tamanho):
+    posicoes = []
+    for i in range(tamanho):
+        if orientacao == 'horizontal':
+            posicoes.append([linha, coluna + i])
+        else:
+            posicoes.append([linha + i, coluna])
+    return posicoes
+
+
+def posicao_valida(frota, linha, coluna, orientacao, tamanho):
+    posicoes = define_posicoes(linha, coluna, orientacao, tamanho)
+
+    for pos in posicoes:
+        l = pos[0]
+        c = pos[1]
+
+        
+        for navio in frota.values():
+            for parte in navio:
+                if [l, c] == parte:
+                    return False
+
+   
+    return True
+
+
