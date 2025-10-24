@@ -1,4 +1,4 @@
-import define_posicoes from funcoes
+from funcoes import define_posicoes
 
 
 linha = 2
